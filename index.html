@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Planet Creator</title>
+    <link rel="stylesheet" href="Index.css"/>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Create a Planet</h3>
+        <label>Name<input id="name" type="text" placeholder="Planet name" value="Planet"></label>
+        <label>Diameter (px)<input id="diam" type="number" min="2" max="200" value="18"></label>
+        <label>Orbit radius (px)<input id="orbit" type="number" min="20" max="800" value="100"></label>
+        <label>Speed (degrees/sec)<input id="speed" type="number" step="0.1" value="20"></label>
+        <label>Color<input id="color" type="color" value="#3aa4ff"></label>
+        <button id="addBtn">Add Planet</button>
+        <button id="resetBtn" style="margin-top:6px;">Clear All</button>
+        <div class="hint">Click a planet on the canvas to remove it.</div>
+
+        <div class="planet-list" id="planetList"></div>
+    </div>
+
+    <canvas id="space"></canvas>
+    <script src = "Index.js"></script>
+</body>
+</html>
